@@ -39,7 +39,8 @@ BOARD_RAMDISK_OFFSET     := 0x02200000
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/lge/v20
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-gnu-6.x/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 
 # inherit from the proprietary version
 -include vendor/lge/v20-common/BoardConfigVendor.mk
