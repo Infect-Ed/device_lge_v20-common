@@ -42,5 +42,11 @@ TARGET_KERNEL_SOURCE := kernel/lge/v20
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-gnu-6.x/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FMRadio
+
+BOARD_HAVE_QCOM_FM := true
+
 # inherit from the proprietary version
 -include vendor/lge/v20-common/BoardConfigVendor.mk
