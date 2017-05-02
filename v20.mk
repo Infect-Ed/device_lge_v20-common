@@ -36,3 +36,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_elsa.conf:system/etc/sensors/sensor_def_common.conf
+
+BOARD_SUPPORTS_SOUND_TRIGGER := true
